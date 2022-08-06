@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMusicPlayer</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="player">
+        <div class="controls">
+            <div class="controls__header">
+                <i class="controls__header-icon fas fa-chevron-down"></i>
+                <div class="controls__header-title">
+                    <p class="controls__header-title-description">Now Playing:</p>
+                    <h3 class="controls__header-title-heading">String 57th & 9th</h3>
+                </div>
+                <i class="controls__header-icon fas fa-plus"></i>
+            </div>
+            <div class="controls__image">
+                <!-- <img src="./assets/image/inspiration2.jpg" alt="song-picture" class="controls__image-img"> -->
+                <div class="controls__image-img"></div>
+            </div>
+            <div class="controls__form">
+                <i class="controls__form-icon btn-repeat fas fa-redo-alt"></i>
+                <i class="controls__form-icon btn-prev fas fa-backward"></i>
+                <div class="controls__form-play-pause">
+                    <i class="controls__form-play-pause-icon fas fa-pause-circle"></i>
+                    <i class="controls__form-play-pause-icon fas fa-play-circle"></i>
+                </div>
+                <i class="controls__form-icon btn-next fas fa-forward"></i>
+                <i class="controls__form-icon btn-random fas fa-random"></i>
+            </div>
+            <div class="controls__range">
+                <input type="range" id="controls__range-input" value="0" step="1" min="0" max="100">
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="playlist">
+            
+        </div>
+    </div>
+
+    <script src="./assets/javascript/codeMusicPlayer.js"></script>
+</body>
+</html>
